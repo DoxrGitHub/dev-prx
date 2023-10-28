@@ -1,0 +1,28 @@
+<head>
+    <meta name="robots" content="noindex">
+    <!-- make it so robots won't find this -->
+</head>
+<body>
+    <p id="loc">Any errors go here. If you see this, there is no error. :D</p>
+    <p>Hmm... either this site is still loading (just wait), or there was an error.</p>
+    <div id="nourl"></div>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const url = urlParams.get('url');
+        if (__uv$config.bare !== 'https://YOURSIMPLEBARESERVER/') {
+        window.navigator.serviceWorker.register('sw.js', {
+            scope: __uv$config.prefix
+        }).then(() => {
+            if (url) {
+                location.href=__uv$config.prefix + __uv$config.encodeUrl(url);
+            } else {
+                document.getElementById('loc').innerHTML = 'ERROR: no URL! Specify it with ?url= at the end of this.'
+            }
+        });
+    } else {
+        document.getElementById('loc').innerHTML = 'ERROR: no bare server! You need a bare server for this to work! See the repo for instructions: https://github.com/DoxrGitHub/dev-prx'
+    }
+    </script>
+</body>
