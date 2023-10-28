@@ -16,8 +16,9 @@ when you want to use this only for proxying sites, yes this means that proxying 
 instructions:
 
 1. deploy https://github.com/DoxrGitHub/simple-bare, host that on flow, hop.io, glitch, or even replit! (the filters doesn't care about this)
-2. (I just made a repo for this lol) host https://github.com/DoxrGitHub/dev-prx anywhere (frontend hosts) or integrate this in a file like prx.html
-3. iframe the site as `myproxysite.com/?url=https://example.com` or if you integrated it `proxy.html?url=https://example.com` where example.com is proxied!
+2. CHANGE LINE 3 IN `uv/uv.config.js` (the file named `uv.config.js` in the `uv` folder) and put in `https://` + the url that simple-bare is on + `/edu/` this is required for devprx to work!!
+3. (I just made a repo for this lol) host https://github.com/DoxrGitHub/dev-prx anywhere (frontend hosts) or integrate this in a file like prx.html
+4. iframe the site as `myproxysite.com/?url=https://example.com` or if you integrated it `proxy.html?url=https://example.com` where example.com is proxied!
 
 yes this is for extreme beginners and anyone more experienced should be able to easily incorporate a uv backend with their project (it's not that hard) but if you can't do that just use devprx
 
