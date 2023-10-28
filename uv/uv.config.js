@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/serve/',
-    bare: 'https://YOURSIMPLEBARESERVER/',
+    bare: 'https://YOURSIMPLEBARESERVER/edu/',
     encodeUrl: Ultraviolet.codec.plain.encode,
     decodeUrl: Ultraviolet.codec.plain.decode,
     handler: "/uv/uv.handler.js",
