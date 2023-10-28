@@ -11,7 +11,7 @@ main way to use it:
 iframe a game url or app/site in one of your sites (hopefully apps as you should just find source code for games but I'm assuming you're proxying multiplayer games to have multiplayer connectivity) with the url such as `mydevprxsite.com/?url=https://play.geforcenow.com` or something, or have it on a html file
 
 when you shouldn't use this:
-when you want to use this only for proxying sites, yes this means that proxying sites is 100x better (imo) but deploying your own clone becomes useless so if your devprx url gets blocked either you're gonna have to tell people how to make their own devprx url or incorporate simple-bare with your backend which makes frontend proxies useless
+when you want to use this only for proxying sites, yes this means that proxying sites is 100x easier (imo) but deploying your own clone becomes useless so if your devprx url gets blocked either you're gonna have to tell people how to make their own devprx url or incorporate simple-bare with your backend which makes frontend proxies useless
 
 instructions:
 
